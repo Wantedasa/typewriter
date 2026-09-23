@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Typewriter Effect — free by wantedasa.dev</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin:0; min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:18px;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; background:#0d1117; color:#e6edf3; padding:24px; text-align:center; }
+  .tag { font-size:.8rem; color:#8b949e; }
+  .note { font-size:.8rem; color:#6b7280; max-width:520px; }
+  
+</style>
+</head>
+<body>
+<h2 id="tw" style="min-height:1.4em;color:#58a6ff"></h2>
+
+<script>
+var el=document.getElementById('tw'),text='Built by wantedasa.';var i=0;function tick(){el.textContent=text.slice(0,i++);if(i>text.length){i=0;setTimeout(tick,1400);}else{setTimeout(tick,90);}}tick();
+</script>
+</body>
+</html>
